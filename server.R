@@ -1,6 +1,6 @@
-library(ggplot2)
+require("ggplot2")
 require("DT")
-library(networkD3)
+require("networkD3")
 
 shinyServer(
   function(input, output) {
