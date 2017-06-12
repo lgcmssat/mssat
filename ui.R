@@ -55,8 +55,7 @@ downloadButton('downloadData1', '下载分析结果')
   ),
 
   # Show a plot of the generated distribution
-  mainPanel(
-      h3("数据预览"),
+  mainPanel(      h3("数据预览"),
       tableOutput('contents'),
 	  h3("标记信息统计"),
 	  plotOutput("distPlot"),
@@ -88,8 +87,8 @@ tabPanel(strong("相似性分析"),
       
 				   
 	  fluidRow(
-      textInput("samplename", label = h3("请输入要分析的材料名称，如A1"),
-        value = "A1")),
+      textInput("samplename", label = h3("请输入要分析的材料名称，如G1"),
+        value = "G1")),
 	  div(textOutput("text3"),style = "color:DarkCyan"),
 br(),	  
       submitButton("Submit"),
